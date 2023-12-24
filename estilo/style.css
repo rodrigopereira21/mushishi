@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Tallys_15.otf';
+    src: url(../fonte/Tallys_15.otf) format('opentype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #F4CACE;
+    --cor02: #F29191;
+    --cor03: #65768C;
+    --cor04: #1A2A40;
+    --cor05: #ABB68C;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Tallys_15.otf', cursive;
+}
+
+body {
+    background-color: var(--cor03);
+    
+}
+    
+    
+    
+
+
+header {
+    background-image: url('../imagens/mushishi.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    text-align: center;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.191);
+}
+
+header > h1 {
+    padding-top: 130px;
+    font-family: var(--fonte-destaque);
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.333);
+    margin-bottom: 30px;
+    
+}
+    
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+     
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+    border-radius: 0px 0px 10px 10px;
+    font-family: var(--fonte-padrao);
+}
+
+main ol {
+    list-style-position: inside;
+}
+
+main a {
+    color: var(--cor02);
+    background-color: var(--cor01);
+    font-weight: bold;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+
+
+}
+
+a.externo:hover {
+    text-decoration: underline;
+}
+
+
+main h2 {
+    margin-bottom: 30px;
+    background-image: linear-gradient( to right, var(--cor02),transparent);
+    color: white;
+    padding-left: 8px;
+
+}
+
+
+main p { 
+    text-align: justify;
+    line-height: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+main img.largura {
+    padding-right: 10px;
+}
+
+div.video {
+    
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+    margin-bottom: 20px;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor01);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.289);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+aside > ul {
+    list-style-position: inside;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.26);
+    
+}
+
+aside h2 {
+    background-color: var(--cor02);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.26);
+    
+}
+
+aside p {
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.26);
+}
+
+ aside  a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.26);
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor04);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    }
+
+    footer  a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: white;
+        text-decoration: underline;
+    }
